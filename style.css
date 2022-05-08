@@ -25,7 +25,7 @@
     padding: 0;
 }
 
-body{
+html{
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
 }
@@ -35,4 +35,33 @@ a{
 
 ul{
     list-style: none;
+}
+
+header{ 
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px; /*el width no se va hacer más chico a partir de esa medida, es la dimencion más chica en celulares*/
+    height: 334px;
+    text-align: center;
+}
+
+header img{
+    width:151px;
+    height: 24px;
+    /* margin: 0 auto;  Posible declaración que ayuda a centar la img*/
+    margin-top: 60px;
+    align-self: center; /*flex: forma de centrar a un elemento que tenga un contenedor con display flex;*/
+}
+
+.header--title-container{
+    width: 90%;
+    min-width: 288px; /*no va a disminuir mas de 288px*/
+    max-width: 900px; /*dejara de crecer hasta los 900px*/
+    height: 218px;
+    margin-top: 36px;
+    text-align: center;
+    align-self: center; /*el contenido como los textos dentro del contenedor se centren*/
 }
