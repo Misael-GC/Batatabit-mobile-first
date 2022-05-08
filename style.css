@@ -46,6 +46,7 @@ header{
     min-width: 320px; /*el width no se va hacer más chico a partir de esa medida, es la dimencion más chica en celulares*/
     height: 334px;
     text-align: center;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #f7931a 100%);
 }
 
 header img{
@@ -64,4 +65,19 @@ header img{
     margin-top: 36px;
     text-align: center;
     align-self: center; /*el contenido como los textos dentro del contenedor se centren*/
+}
+
+.header--title-container h1{
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem; /*espacio entre lineas*/
+    color: var(--just-white);
+}
+
+.header--title-container p{
+    margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--soft-orange);
 }
