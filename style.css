@@ -6,6 +6,8 @@
 5. Otros
 */
 
+/* NOTA: el MIN-WIDTH es de 288 en las etiquetas de texto cuyo WIDTH es de 90% (del ancho del contenedor donde estan), esto es xq 288 equivale al 90% de 320, significa que su tamaño no va ser menor a 288px cuando el view port sea de 320 (que es el menor posible) .*/
+
 :root{
     /*Colores*/
     --bitcoin-orange: #f7931a;
@@ -108,4 +110,25 @@ header img{
   height: 8px;
   margin-left: 10px;
   background-image: url("./assets/icons/down-arrow.svg");  
+}
+main{
+    width: 100%;
+    min-width: 320px; /*para que no se haga más pequeña de esta dimension y quede igual que el header*/
+    height: auto; /*vatomando la altura segun su contenido*/
+    background: var(--off-white);
+}
+
+.main-exchange-container{
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.main-exchange-container--title{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
 }
