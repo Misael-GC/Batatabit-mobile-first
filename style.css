@@ -325,7 +325,7 @@ main{
      width: 90%;
      min-width: 288px;
      max-width: 400px;
-     height: 150px;
+     min-height: 150px;
      margin: 15px auto;
      padding: 15px;
      background: var(--black);
@@ -372,4 +372,23 @@ main{
 
 .product-detail--card .paloma{
     background-image: url(./assets/icons/check-circle.svg);
+}
+
+.bitcoin-img-container{
+    width: 100%;
+    min-width: 320px;
+    height: 70vh; /*min-heigth: 320PX;*/
+    background-image: url("./assets/img/bitcoinbaby2x.jpg"); /*la 2x me da una imagen más grande y al crecer la pantalla la imagen se vea bien y no con tanto pixelaje*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    text-align: center;
+}
+
+.bitcoin-img-container h2{
+    padding-top: 60px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
 }
