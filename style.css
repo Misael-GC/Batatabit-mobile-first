@@ -252,7 +252,7 @@ main{
      font-size: 1.6rem;
      font-weight: 500;
      line-height: 1.9rem;
-     color: var(--grey); 
+     color: var(--warm-black); 
      background: var(--just-white);
  }
 
@@ -286,7 +286,7 @@ main{
     font-size: 1.4rem;
     font-weight: normal;
     line-height: 1.7rem;
-    color: #757575;
+    color: var(--warm-black);
 }
 
 .currency-table--container .down{
