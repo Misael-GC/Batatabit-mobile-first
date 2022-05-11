@@ -434,6 +434,15 @@ main{
     scroll-snap-type: x proximity;
 }
 
+.plans-container--slider::-webkit-scrollbar{ /*decorar el scroll*/
+    background: var(--soft-orange);
+    height: 3px;
+}
+
+.plans-container--slider::-webkit-scrollbar-thumb{
+    background: var(--bitcoin-orange);
+}
+
 .plans-container--card{
  position: relative;
  scroll-snap-align: center; /*intenta centrar una tarjeta automaticamente, no deja que te paraes en medio de 2 tarjetas, lo puedes aplicar horizontal y verticalmente*/
