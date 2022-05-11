@@ -437,6 +437,7 @@ main{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; 
+   /* background-attachment: fixed; allow to the img fijarse y al hacer scroll se ve toda la imagen*/
     text-align: center;
 }
 
@@ -612,4 +613,9 @@ footer .left ul{
 
 .left a{
     color: var(--just-white);
+}
+
+.main-tables-container,
+.plans-container--slider{
+    overflow-x: unset; /*nos permite desaparecer el scroll horizontal cuando el espacio lo demanda*/
 }
