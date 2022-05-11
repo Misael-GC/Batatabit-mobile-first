@@ -178,6 +178,51 @@ main{
     line-height: 2.3rem;
     color: var(--bitcoin-orange);
 }
+
+@media(max-width:320px){
+    .main-currency-table1{
+        position: relative;
+        width: 10%;
+        min-width: 25px;
+        max-width: 50px;
+        height: 360px;
+    }
+
+    .main-currency-table1 .table1-span1{
+        position: absolute;
+        width: 12px;
+        height: 20px;
+        bottom: calc(50%);
+        right: calc(50% + 10px);
+        background-image: url(./assets/icons/right-arrow.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .main-currency-table1 .table1-span2{
+        position: absolute;
+        width: 12px;
+        height: 20px;
+        bottom: calc(50%);
+        left: calc(50% + 10px);
+        background-image: url(./assets/icons/left-arrow.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+/* para colocar scroll del bueno usa este */
+.main-tables-container{
+    display: flex; /*este pondra a las targetas una del lado de otra*/
+    gap: 30px; /*si no usas el gap ve a .plans-container--card por cierto este da espacio entre las tarjetas*/
+    min-height: 400px; /*sea más alto que su contenido*/
+    overflow-x:scroll; /*crea la opcion de deslizar para ver otras tarjetas*/
+    overflow-y:hidden;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+
 .currency-table--container,
 .comision-table--container{
     width: 90%;
@@ -185,6 +230,7 @@ main{
     max-width: 300px;
     height: 250px;
     margin: 0 auto;
+    scroll-snap-align: center;
 }  
 
 .currency-table--container table,
@@ -430,6 +476,7 @@ main{
     gap: 20px; /*si no usas el gap ve a .plans-container--card por cierto este da espacio entre las tarjetas*/
     height: 316px; /*sea más alto que su contenido*/
     overflow-x:scroll; /*crea la opcion de deslizar para ver otras tarjetas*/
+    overflow-y:hidden;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
 }
